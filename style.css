@@ -1,0 +1,48 @@
+
+body {
+    margin: 0px;
+    background-color: beige;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 30px;
+    color: #256a42;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 20px;
+    color: #256a42;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 16px;
+    color: #256a42;
+}
+
+.nav {
+    background-color: #256a42;
+
+}
+
+.nav-link {
+    padding: 25px;
+    display: block;
+    color: white;
+
+}
+
+.nav-link:hover {
+    background-color: lightgreen;
+}
+
+p {
+    font-family: 'Times New Roman';
+    color: #256a42;
+}
