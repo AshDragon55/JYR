@@ -67,12 +67,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Appointment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body style="margin: 50px;">
     <h2>Update Appointment</h2>
     <form method="POST">
@@ -96,11 +98,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label>Parish:</label>
         <input type="text" name="Parish" value="<?= $row["Parish"] ?>" required class="form-control">
 
-        <label>Service:</label>
-        <input type="text" name="Service" value="<?= $row["Service"] ?>" required class="form-control">
+        <!-- <label for="Parish" class="form-label"  >Select Parish</label>
+                        <select id="Parish" name="Parish" class="form-select " required>
+                             <option value="">Select Parish</option>
+                            <option value="St. Lucy">St. Lucy</option>
+                            <option value="St. Peter">St. Peter</option>
+                            <option value="St. Andrew">St. Andrew</option>
+                            <option value="St. James">St. James</option>
+                            <option value="St. Joseph">St. Joseph</option>
+                            <option value="St. George">St. George</option>
+                            <option value="St. Thomas">St. Thomas</option>
+                            <option value="St. John">St. John</option>
+                            <option value="St. Michael">St. Michael</option>
+                            <option value="St. Philip">St. Philip</option>
+                            <option value="Christ Church">Christ Church</option>
+                        </select> -->
+
+
+        <div class="mb-2">
+            <label for="Service" class="form-label">Service Type</label>
+            <select id="Service" name="Service" class="form-select" required>
+                <option value="installation">Installation</option>
+                <option value="repair">Repair</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+        </div>
 
         <label>Appliance:</label>
         <input type="text" name="Appliance" value="<?= $row["Appliance"] ?>" required class="form-control">
+
+       
 
         <label>Date:</label>
         <input type="datetime-local" name="Date" value="<?= $row["Date"] ?>" required class="form-control">
@@ -113,4 +140,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="editappointment.php" class="btn btn-secondary">Cancel</a>
     </form>
 </body>
+
 </html>

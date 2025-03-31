@@ -38,3 +38,4 @@ if ($stmt->execute()) {
 // Close Connection
 $stmt->close();
 $conn->close();
+?>

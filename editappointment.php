@@ -15,6 +15,8 @@
     <table class="table">
         <thead>
             <tr>
+            <a class='btn btn-success' href='create.php'>Create New Appointment</a>
+
                 <th>id</th>
                 <th>FirstName</th>
                 <th>LastName</th>
@@ -69,6 +71,7 @@
                     <td>
                         <a class='btn btn-primary' href='update.php?id=" . $row["id"] . "'>Update</a>
                         <a class='btn btn-danger' href='delete.php?id=" . $row["id"] . "' onclick='return confirm(\"Are you sure?\");'>Delete</a>
+                        
                     </td>
                 </tr>";
             }
